@@ -1,0 +1,44 @@
+{
+	"name": "node-starter",
+	"version": "0.2.0",
+	"description": "Boilerplate",
+	"main": "src/index.ts",
+	"typings": "index.d.ts",
+	"repository": "git@github.com:selfrefactor/node-starter.git",
+	"author": "Dejan Toteff <deyan8284@gmail.com>",
+	"license": "MIT",
+	"private": false,
+	"dependencies": {
+		"rambdax": "https://github.com/selfrefactor/rambdax#0.7.3"
+	},
+	"devDependencies": {
+		"@types/jest": "^21.1.5",
+		"@types/node": "^8.0.50",
+		"jest": "^21.3.0-beta.8",
+		"log": "https://github.com/selfrefactor/log#0.3.0",
+		"ts-jest": "^21.2.1",
+		"tslint": "^5.8.0",
+		"typescript": "^2.7.0-dev.20171109",
+		"watch-fn": "https://github.com/selfrefactor/watch-fn#0.3.0"
+	},
+	"scripts": {
+		"start": "node files/watch",
+		"test": "jest",
+		"cover": "jest __tests__ --coverage",
+		"dev": "jest __tests__ --watch",
+		"build": "tsc -p ."
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+		},
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js",
+			"jsx",
+			"json"
+		]
+	}
+}
