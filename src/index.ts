@@ -1,10 +1,12 @@
-import { shellSync } from 'execa'
 import { createDockerCommand } from './modules/createDockerCommand'
+import { createFfmpegCommand } from './modules/createFfmpegCommand'
 import { exec } from './modules/exec'
 
 export async function youtubeToAudio(input: Input): Promise<void> {
   const dockerCommand = createDockerCommand(input.url)
-  await exec(dockerCommand)
+  // await exec(dockerCommand)
+  const ffmpegCommand = createFfmpegCommand(input.output)
+  await exec(ffmpegCommand)
 
   return
 }
@@ -16,5 +18,3 @@ youtubeToAudio({
   url: youtubeURL,
 })
   .then(console.log)
-
-// ffmpeg -i video.mp4 -vn -acodec libmp3lame -ac 2 -ab 160k -ar 48000 audio.mp3

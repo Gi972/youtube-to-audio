@@ -1,10 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const createDockerCommand_1 = require("./modules/createDockerCommand");
+const createFfmpegCommand_1 = require("./modules/createFfmpegCommand");
 const exec_1 = require("./modules/exec");
 async function youtubeToAudio(input) {
     const dockerCommand = createDockerCommand_1.createDockerCommand(input.url);
-    await exec_1.exec(dockerCommand);
+    // await exec(dockerCommand)
+    const ffmpegCommand = createFfmpegCommand_1.createFfmpegCommand(input.output);
+    await exec_1.exec(ffmpegCommand);
     return;
 }
 exports.youtubeToAudio = youtubeToAudio;
@@ -14,5 +17,4 @@ youtubeToAudio({
     url: youtubeURL,
 })
     .then(console.log);
-// ffmpeg -i video.mp4 -vn -acodec libmp3lame -ac 2 -ab 160k -ar 48000 audio.mp3
 //# sourceMappingURL=index.js.map

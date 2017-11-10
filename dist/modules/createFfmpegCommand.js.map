@@ -1,0 +1,1 @@
+{"version":3,"file":"createFfmpegCommand.js","sourceRoot":"","sources":["../../src/modules/createFfmpegCommand.ts"],"names":[],"mappings":";;AAAA,6BAAoC,MAAc;IAChD,MAAM,WAAW,GAAG,qBAAqB,CAAA;IACzC,MAAM,WAAW,GAAG,iDAAiD,CAAA;IAErE,MAAM,CAAC,GAAG,WAAW,IAAI,WAAW,IAAI,MAAM,EAAE,CAAA;AAClD,CAAC;AALD,kDAKC"}
