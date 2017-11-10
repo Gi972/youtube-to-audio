@@ -15,11 +15,12 @@ Convert Youtube URL to MP3 file
 
 ```
 import {youtubeToAudio} from 'youtube-to-audio'
-const youtubeURL = 'https://www.youtube.com/watch?v=sRP2We4FRP4'
+
+const youtubeURL = 'https://www.youtube.com/watch?v=pLjaBQd3KU4'
 
 youtubeToAudio({
+  output: `${process.cwd()}/Misty_Mountain_Hop.mp3`,
   url: youtubeURL,
-  output: `${process.cwd()}/no-quarter.mp3`
 })
   .then(console.log)
 ```

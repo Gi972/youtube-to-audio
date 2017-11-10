@@ -9,11 +9,11 @@
 	"license": "MIT",
 	"private": false,
 	"dependencies": {
-		"rambdax": "https://github.com/selfrefactor/rambdax#0.7.3"
+		"rambdax": "https://github.com/selfrefactor/rambdax#0.7.3",
+		"log": "https://github.com/selfrefactor/log#0.3.0"
 	},
 	"devDependencies": {
 		"@types/node": "^8.0.50",
-		"log": "https://github.com/selfrefactor/log#0.3.0",
 		"tslint": "^5.8.0",
 		"typescript": "^2.7.0-dev.20171109",
 		"watch-fn": "https://github.com/selfrefactor/watch-fn#0.3.0"
