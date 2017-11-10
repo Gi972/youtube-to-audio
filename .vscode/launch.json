@@ -12,8 +12,7 @@
       "preLaunchTask": "tsc: build - tsconfig.json",
       "outFiles": [
         "${workspaceFolder}/dist/**/*.js"
-      ],
-      "args":["revert", "fs-extra"]
+      ]
     }
   ]
 }

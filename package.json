@@ -1,14 +1,16 @@
 {
-	"name": "node-starter",
+	"name": "youtube-to-audio",
 	"version": "0.2.0",
-	"description": "Boilerplate",
-	"main": "src/index.ts",
-	"typings": "index.d.ts",
-	"repository": "git@github.com:selfrefactor/node-starter.git",
+	"description": "Convert Youtube URL to MP3 file",
+	"main": "./dist/index.js",
+	"typings": "./src/typings.d.ts",
+	"repository": "git@github.com:selfrefactor/youtube-to-audio.git",
 	"author": "Dejan Toteff <deyan8284@gmail.com>",
 	"license": "MIT",
 	"private": false,
 	"dependencies": {
+		"@types/execa": "^0.7.2",
+		"execa": "^0.8.0",
 		"rambdax": "https://github.com/selfrefactor/rambdax#0.7.3"
 	},
 	"devDependencies": {

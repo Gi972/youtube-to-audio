@@ -1,8 +1,20 @@
-export function fn(x: string): void {
+import { shellSync } from 'execa'
+import { createDockerCommand } from './modules/createDockerCommand'
+import { exec } from './modules/exec'
+
+export async function youtubeToAudio(input: Input): Promise<void> {
+  const dockerCommand = createDockerCommand(input.url)
+  await exec(dockerCommand)
 
   return
 }
 
-// docker run -it --rm -v "$(pwd):/src" jbergknoff/youtube-dl -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]' -o /src/video.mp4 https://www.youtube.com/watch?v=sRP2We4FRP4
+const youtubeURL = 'https://www.youtube.com/watch?v=sRP2We4FRP4'
+
+youtubeToAudio({
+  output: `${process.cwd()}/no-quarter.mp3`,
+  url: youtubeURL,
+})
+  .then(console.log)
 
 // ffmpeg -i video.mp4 -vn -acodec libmp3lame -ac 2 -ab 160k -ar 48000 audio.mp3

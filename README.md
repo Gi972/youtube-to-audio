@@ -19,7 +19,7 @@ const youtubeURL = 'https://www.youtube.com/watch?v=sRP2We4FRP4'
 
 youtubeToAudio({
   url: youtubeURL,
-  output: `${process.env()}/no-quarter.mp3`
+  output: `${process.cwd()}/no-quarter.mp3`
 })
   .then(console.log)
 ```
