@@ -9,7 +9,7 @@ Convert Youtube URL to MP3 file
 
 ## Install
 
-`yarn add https://github.com/selfrefactor/youtube-to-audio#0.1.0`
+`yarn add https://github.com/selfrefactor/youtube-to-audio#0.3.0`
 
 ## Usage
 

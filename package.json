@@ -1,6 +1,6 @@
 {
 	"name": "youtube-to-audio",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Convert Youtube URL to MP3 file",
 	"main": "./dist/index.js",
 	"typings": "./src/typings.d.ts",
