@@ -4,6 +4,7 @@ import { createDockerCommand } from './modules/createDockerCommand'
 import { createFfmpegCommand } from './modules/createFfmpegCommand'
 import { exec } from './modules/exec'
 import { normalizeURL } from './modules/normalizeURL'
+import { Input } from './typings'
 
 export async function youtubeToAudio(input: Input): Promise<void> {
   log('Conversion to mp4 is done', 'success')
