@@ -9,12 +9,12 @@ Convert Youtube URL to MP3 file
 
 ## Install
 
-`yarn add https://github.com/selfrefactor/youtube-to-audio#0.3.0`
+`yarn add https://github.com/selfrefactor/youtube-to-audio#0.4.0`
 
 ## Usage
 
 ```
-import {youtubeToAudio} from 'youtube-to-audio'
+import { youtubeToAudio } from 'youtube-to-audio'
 
 const youtubeURL = 'https://www.youtube.com/watch?v=pLjaBQd3KU4'
 
