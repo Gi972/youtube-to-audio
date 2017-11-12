@@ -7,7 +7,7 @@ import { normalizeURL } from './modules/normalizeURL'
 import { Input } from './typings'
 
 export async function youtubeToAudio(input: Input): Promise<void> {
-  log('Conversion to mp4 is done', 'success')
+  log('Conversion to mp4 starter', 'info')
   const dockerCommand = createDockerCommand(
     normalizeURL(input.url),
   )

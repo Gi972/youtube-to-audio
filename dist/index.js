@@ -7,7 +7,7 @@ const createFfmpegCommand_1 = require("./modules/createFfmpegCommand");
 const exec_1 = require("./modules/exec");
 const normalizeURL_1 = require("./modules/normalizeURL");
 async function youtubeToAudio(input) {
-    log_1.log('Conversion to mp4 is done', 'success');
+    log_1.log('Conversion to mp4 starter', 'info');
     const dockerCommand = createDockerCommand_1.createDockerCommand(normalizeURL_1.normalizeURL(input.url));
     await exec_1.exec(dockerCommand);
     log_1.log('Conversion to mp4 is done', 'success');
